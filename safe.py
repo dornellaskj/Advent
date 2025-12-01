@@ -32,6 +32,7 @@ for instruction in instructions:
             for i in range(movement_count):
                 if dial_position == 99:
                     point_at_zero_count += 1
+                    # setting this mofo to -1 so that when we add 1 below it becomes 0
                     dial_position = -1
                 dial_position = (dial_position + 1)
 
@@ -40,6 +41,7 @@ for instruction in instructions:
                 if dial_position == 1:
                     point_at_zero_count += 1
                 if dial_position == 0:
+                    # setting this mofo to 100 so that when we subtract 1 below it becomes 99
                     dial_position = 100
                 dial_position = (dial_position - 1)
         
