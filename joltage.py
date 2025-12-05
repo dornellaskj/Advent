@@ -70,7 +70,6 @@ for line in data:
         
         max_joltage = int(''.join(part2_banks)) if part2_banks else 0
         print(f"Part 2 - Max Joltage after removals: {max_joltage}")
-    # Add this maximum joltage to our cumulative total
     part2_total_joltage += max_joltage
     
     original_length = len(line)
